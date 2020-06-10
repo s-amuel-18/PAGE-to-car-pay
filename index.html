@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- estilos css -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800;900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- boxicons -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="IMG/SS.svg" type="image/x-icon">
+
+    <title>SamiShop</title>
+</head>
+
+<body class="h">
+    <div class="content-centrado">
+        <img class="centrado" src="IMG/preload samuel.gif" alt="">
+    </div>
+
+    <!-- header -->
+    <header class="header">
+        <!-- barra de navegacion -->
+        <nav class="navegacion">
+            <div class="contenedor">
+                <div class="navegacion__contentLogo">
+                    <a href="#"><img loading="lazy" src="IMG/SamiShop.svg" alt="">
+                    </a>
+                </div>
+                <div class="navegacion__content-car">
+                    <i class='bx bxs-cart ' id="carrito"></i>
+                </div>
+            </div>
+            <div class="contenedorContentCar" id="addCarrito">
+                <div class="contentTituloCompra">
+                    <h3>Productos agregados</h3>
+                </div>
+                <div class="ListProductos">
+                    <!-- <div class="ListProductos__productos">
+                        <div class="ListProductos__productos-img">
+                            <img src="IMG/producto-10.jpg" alt="" class="img-productoCar">
+                        </div>
+                        <div class="infoProductoCar">
+                            <h4>nombre modelo zapato</h4>
+                            <small>tallas</small>
+                            <p>30 - 45</p>
+                        </div>
+                        <div class="precioProductoCard">
+                            <p>140,99$</p>
+                        </div>
+                        <div class="ButtonXdelete">
+                            <i class='bx bx-x xdelete'></i>
+                        </div>
+                    </div> -->
+                    
+                </div>
+                        <div class="contenedorBotonesDelPay">
+                            <div class="pagarAhora">¡Pagar ahora!</div>
+                            <div class="vaciarCarrito">
+    
+                                <i class='bx bxs-trash ' ></i>
+                            </div>
+                        </div>
+            </div>
+        </nav>
+
+        <!-- imagen principal -->
+        <section class="imagenPrincipal">
+            <img loading="lazy" src="IMG/imagen-principal-2.jpg" alt="" class="imagenPrincipal__img">
+            <div class="imagenPrincipal__contenido">
+                <div class="imagenPrincipal__contenido-contenedor ">
+                    <h1 class="imagenPrincipal__contenido-title">Compra lo que necesites</h1>
+                    <p class="imagenPrincipal__contenido-parrafo">Productos de la mejor calida al alcance de tus manos
+                    </p>
+                    <form action="" class="formBusqueda">
+                        <input class="formBusqueda-buscador" type="text">
+                        <i type="subnit" class='bx bxs-chevron-right buscar'></i>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- contenido principal -->
+    <main class="main">
+        <div class="contenedor-main cursos" id="cursos">
+            <div class="contentTitle">
+                <h2>lo <span class="bigLetterTitle">mas</span> vendido</h2>
+            </div>
+
+            <div class="contentProducts">
+                <div class="contentProducts__products">
+                    <img loading="lazy" src="IMG/producto-2.jpg" alt="" class="contentProducts__products-img">
+                    <div class="contentProducts__products-etiqueta">sneakers</div>
+                    <div class="contentProducts__products-description">
+                        <h3>Nike Revolution </h3>
+                        <div class="descriptionTallaPrecio">
+                            <div class="description-talla">
+                                <small>tallas</small>
+                                <p>30 - 45</p>
+                            </div>
+                            <div class="description-precio">
+                                <samll class="precio-viejo">150$</samll>
+                                <p>100,<span class="precioGrande">99</span>$</p>
+                            </div>
+                        </div>
+                        <a href="" data-id="1" class="button-compra">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="contentProducts__products">
+                    <img loading="lazy" src="IMG/producto-3.jpg" alt="" class="contentProducts__products-img">
+                    <div class="contentProducts__products-etiqueta">sneakers</div>
+                    <div class="contentProducts__products-description">
+                        <h3>Nike in-Season TR 9</h3>
+                        <div class="descriptionTallaPrecio">
+                            <div class="description-talla">
+                                <small>tallas</small>
+                                <p>30 - 41</p>
+                            </div>
+                            <div class="description-precio">
+                                <samll class="precio-viejo">180$</samll>
+                                <p>170,<span class="precioGrande">99</span>$</p>
+                            </div>
+                        </div>
+                        <a href="" class="button-compra" data-id="2">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="contentProducts__products">
+                    <img loading="lazy" src="IMG/producto-4.jpg" alt="" class="contentProducts__products-img">
+                    <div class="contentProducts__products-etiqueta">sneakers</div>
+                    <div class="contentProducts__products-description">
+                        <h3>Nike Womens TR 8</h3>
+                        <div class="descriptionTallaPrecio">
+                            <div class="description-talla">
+                                <small>tallas</small>
+                                <p>30 - 41</p>
+                            </div>
+                            <div class="description-precio">
+                                <samll class="precio-viejo">140$</samll>
+                                <p>110,<span class="precioGrande">99</span>$</p>
+                            </div>
+                        </div>
+                        <a href="" class="button-compra" data-id="3">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contentProducts">
+                <div class="contentProducts__products">
+                    <img loading="lazy" src="IMG/producto-5.jpg" alt="" class="contentProducts__products-img">
+                    <div class="contentProducts__products-etiqueta">sneakers</div>
+                    <div class="contentProducts__products-description">
+                        <h3>jordan one orange</h3>
+                        <div class="descriptionTallaPrecio">
+                            <div class="description-talla">
+                                <small>tallas</small>
+                                <p>30 - 45</p>
+                            </div>
+                            <div class="description-precio">
+                                <samll class="precio-viejo">200$</samll>
+                                <p>140,<span class="precioGrande">99</span>$</p>
+                            </div>
+                        </div>
+                        <a href="" class="button-compra" data-id="4">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="contentProducts__products">
+                    <img loading="lazy" src="IMG/producto-6.jpg" alt="" class="contentProducts__products-img">
+                    <div class="contentProducts__products-etiqueta">sneakers</div>
+                    <div class="contentProducts__products-description">
+                        <h3>jordan one white</h3>
+                        <div class="descriptionTallaPrecio">
+                            <div class="description-talla">
+                                <small>tallas</small>
+                                <p>30 - 45</p>
+                            </div>
+                            <div class="description-precio">
+                                <samll class="precio-viejo">220$</samll>
+                                <p class="remate">170,<span class="precioGrande">99</span>$</p>
+                            </div>
+                        </div>
+                        <a href="" class="button-compra" data-id="5">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="contentProducts__products">
+                    <img loading="lazy" src="IMG/producto-7.jpg" alt="" class="contentProducts__products-img">
+                    <div class="contentProducts__products-etiqueta">sneakers</div>
+                    <div class="contentProducts__products-description">
+                        <h3>Nike Mens React</h3>
+                        <div class="descriptionTallaPrecio">
+                            <div class="description-talla">
+                                <small>tallas</small>
+                                <p>30 - 45</p>
+                            </div>
+                            <div class="description-precio">
+                                <samll class="precio-viejo">150$</samll>
+                                <p>130,<span class="precioGrande">99</span>$</p>
+                            </div>
+                        </div>
+                        <a href="" class="button-compra" data-id="6">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contentProducts">
+                <div class="contentProducts__products">
+                    <img loading="lazy" src="IMG/producto-9.jpg" alt="" class="contentProducts__products-img">
+                    <div class="contentProducts__products-etiqueta">sneakers</div>
+                    <div class="contentProducts__products-description">
+                        <h3>jordan travis scott</h3>
+                        <div class="descriptionTallaPrecio">
+                            <div class="description-talla">
+                                <small>tallas</small>
+                                <p>30 - 45</p>
+                            </div>
+                            <div class="description-precio">
+                                <samll class="precio-viejo">250$</samll>
+                                <p>240,<span class="precioGrande">99</span>$</p>
+                            </div>
+                        </div>
+                        <a href="" class="button-compra" data-id="7">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="contentProducts__products">
+                    <img loading="lazy" src="IMG/producto-10.jpg" alt="" class="contentProducts__products-img">
+                    <div class="contentProducts__products-etiqueta">sneakers</div>
+                    <div class="contentProducts__products-description">
+                        <h3>nike classic</h3>
+                        <div class="descriptionTallaPrecio">
+                            <div class="description-talla">
+                                <small>tallas</small>
+                                <p>30 - 45</p>
+                            </div>
+                            <div class="description-precio">
+                                <samll class="precio-viejo">130$</samll>
+                                <p>100,<span class="precioGrande">99</span>$</p>
+                            </div>
+                        </div>
+                        <a href="" class="button-compra" data-id="8">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="contentProducts__products">
+                    <img loading="lazy" src="IMG/producto-11.jpg" alt="" class="contentProducts__products-img">
+                    <div class="contentProducts__products-etiqueta">sneakers</div>
+                    <div class="contentProducts__products-description">
+                        <h3>jordan retro XI</h3>
+                        <div class="descriptionTallaPrecio">
+                            <div class="description-talla">
+                                <small>tallas</small>
+                                <p>30 - 45</p>
+                            </div>
+                            <div class="description-precio">
+                                <samll class="precio-viejo">150$</samll>
+                                <p>130,<span class="precioGrande">99</span>$</p>
+                            </div>
+                        </div>
+                        <a href="" class="button-compra" data-id="9">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contentProducts">
+                <div class="contentProducts__products">
+                    <img loading="lazy" src="IMG/producto-12.jpg" alt="" class="contentProducts__products-img">
+                    <div class="contentProducts__products-etiqueta">sneakers</div>
+                    <div class="contentProducts__products-description">
+                        <h3>nije old school</h3>
+                        <div class="descriptionTallaPrecio">
+                            <div class="description-talla">
+                                <small>tallas</small>
+                                <p>30 - 41</p>
+                            </div>
+                            <div class="description-precio">
+                                <samll class="precio-viejo">120$</samll>
+                                <p>100,<span class="precioGrande">99</span>$</p>
+                            </div>
+                        </div>
+                        <a href="" class="button-compra" data-id="10">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="contentProducts__products">
+                    <img loading="lazy" src="IMG/producto-13.jpg" alt="" class="contentProducts__products-img">
+                    <div class="contentProducts__products-etiqueta">sneakers</div>
+                    <div class="contentProducts__products-description">
+                        <h3>converce old school</h3>
+                        <div class="descriptionTallaPrecio">
+                            <div class="description-talla">
+                                <small>tallas</small>
+                                <p>30 - 45</p>
+                            </div>
+                            <div class="description-precio">
+                                <samll class="precio-viejo">150$</samll>
+                                <p>110,<span class="precioGrande">99</span>$</p>
+                            </div>
+                        </div>
+                        <a href="" class="button-compra" data-id="11">Agregar al carrito</a>
+                    </div>
+                </div>
+                <div class="contentProducts__products">
+                    <img loading="lazy" src="IMG/producto-14.jpg" alt="" class="contentProducts__products-img">
+                    <div class="contentProducts__products-etiqueta">sneakers</div>
+                    <div class="contentProducts__products-description">
+                        <h3>nike air force</h3>
+                        <div class="descriptionTallaPrecio">
+                            <div class="description-talla">
+                                <small>tallas</small>
+                                <p>30 - 45</p>
+                            </div>
+                            <div class="description-precio">
+                                <samll class="precio-viejo">120$</samll>
+                                <p>110,<span class="precioGrande">99</span>$</p>
+                            </div>
+                        </div>
+                        <a href="" class="button-compra" data-id="12">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="imagenUp">
+            <i class='bx bx-x close'></i>
+            <div class="imagenUp__contenedor cursos" id="cursosModal">
+                <div class="content-imagenUp-img">
+                    <img loading="lazy" src="" alt="" class="contentProducts__imagenUp-img">
+                </div>
+                <div class="contentProducts__products blanco">
+                    <div class="contentProducts__products-etiqueta">sneakers</div>
+                    <div class="contentProducts__products-description-up ">
+                        <h3 id="ModeloZapato">nike air force</h3>
+                        <div class="descriptionTallaPrecio-up">
+                            <div class="description-talla-up">
+                                <small>tallas</small>
+                                <p id="tallas">30 - 45</p>
+                            </div>
+                            <div class="contenedor-descriptyionAfondo">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eum enim exercitationem
+                                    aperiam ab accusantium maxime ratione quis eveniet. Voluptatem cumque, consequatur
+                                    et veritatis explicabo saepe nobis molestias. Quas quia ex suscipit, cumque atque
+                                    Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <div class="description-precio-up">
+                                <samll class="precio-viejo" id="precioViejo">120$</samll>
+                                <p id="precio">110,<span class="precioGrande">99</span>$</p>
+                            </div>
+                        </div>
+
+                        <div class="content-butonCarrito">
+                            <a href="" id="button" class="button-compra">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__content-footer">
+            <div class="footer__content-footer-links">
+                <a href="#">mas productos</a>
+                <a href="#">ropa</a>
+                <a href="#">maquillage</a>
+                <a href="#">tecnologia</a>
+            </div>
+            <div class="footer__content-footer-socialMedia">
+                <div class="social-media"><i class='bx bxl-facebook'></i></div>
+                <div class="social-media"><i class='bx bxl-instagram'></i></div>
+                <div class="social-media"><i class='bx bxl-twitter'></i></div>
+                <div class="social-media"><i class='bx bxl-linkedin'></i></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JS/main.js"></script>
+</body>
+
+</html>
